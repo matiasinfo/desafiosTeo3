@@ -1,6 +1,3 @@
-import imp
-
-
 import string
 
 def codifico(frase):
@@ -9,13 +6,8 @@ def codifico(frase):
     codigo = map(lambda x: chr(ord(x)+1), frase)
     return codigo
 
-def decodifico(codigo):
-    """ genera un nuevo string con los elementos del iterable que recibe por parametro"""
-    nuevo = ""
-    for elem in nuevo_codigo:
-        nuevo = nuevo + elem
-    return nuevo
-
 frase = input("ingrese una frase: ")
 nuevo_codigo= codifico(frase)
-print(decodifico(nuevo_codigo)) 
+separador = ""
+nueva_frase = separador.join(nuevo_codigo)
+print(nueva_frase)
